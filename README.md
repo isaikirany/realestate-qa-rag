@@ -4,6 +4,10 @@
 
 AI-powered real estate research tool. Paste up to 3 article URLs, ask questions, and get instant answers grounded in the source content. Built with LangChain, Groq LLM, ChromaDB, and Streamlit.
 
+## Pipeline
+
+![RAG Pipeline](rag_pipeline.gif)
+
 ## How It Works
 
 1. Paste up to 3 real estate article URLs in the sidebar

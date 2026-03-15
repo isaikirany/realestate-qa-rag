@@ -1,6 +1,12 @@
 # 🏠 Real Estate Research Tool
 
-A RAG (Retrieval-Augmented Generation) app that lets you paste real-estate article URLs and ask questions about them — powered by LangChain, Groq, and ChromaDB.
+AI-powered real estate research tool. Paste up to 3 article URLs, ask questions, and get instant answers grounded in the source content. Built with LangChain, Groq LLM, ChromaDB, and Streamlit.
+
+## How It Works
+
+1. Paste up to 3 real estate article URLs in the sidebar
+2. Click **Process URLs** — the app scrapes and indexes the content
+3. Ask any question — the app retrieves relevant context and generates an answer with sources
 
 ## Tech Stack
 
@@ -16,8 +22,8 @@ A RAG (Retrieval-Augmented Generation) app that lets you paste real-estate artic
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/isaikirany/realestate-qa-rag.git
+cd realestate-qa-rag
 ```
 
 **2. Create and activate a virtual environment**
@@ -45,11 +51,13 @@ Get a free key at [console.groq.com](https://console.groq.com).
 streamlit run main.py
 ```
 
+Open [http://localhost:8501](http://localhost:8501) in your browser.
+
 ## Deploy to Streamlit Community Cloud (free)
 
-1. Push this repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io) and connect your GitHub account
-3. Select this repo → set **Main file** to `main.py`
+1. Fork or clone this repo to your GitHub account
+2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub
+3. Click **New app** → select this repo, branch `main`, file `main.py`
 4. Under **Advanced settings → Secrets**, add:
 ```toml
 GROQ_API_KEY = "your-groq-api-key-here"

@@ -73,13 +73,13 @@ def draw_node(ax, x, y, line1, line2, active):
     ax.add_patch(box)
 
     if line2:
-        ax.text(x, y + 0.17, line1, color=tc, ha='center', va='center',
-                fontsize=10, fontweight=fw, zorder=4)
-        ax.text(x, y - 0.17, line2, color=tc, ha='center', va='center',
-                fontsize=9, fontweight=fw, zorder=4)
+        ax.text(x, y + 0.19, line1, color=tc, ha='center', va='center',
+                fontsize=12.5, fontweight=fw, zorder=4)
+        ax.text(x, y - 0.19, line2, color=tc, ha='center', va='center',
+                fontsize=11.5, fontweight=fw, zorder=4)
     else:
         ax.text(x, y, line1, color=tc, ha='center', va='center',
-                fontsize=10.5, fontweight=fw, zorder=4)
+                fontsize=13, fontweight=fw, zorder=4)
 
 
 def draw_arrow(ax, x0, y0, x1, y1, active):
@@ -135,15 +135,6 @@ def animate(frame):
             "RAG Pipeline  —  Real Estate Research Tool",
             color=WHITE, fontsize=14.5, fontweight='bold',
             ha='center', va='center', fontfamily='DejaVu Sans')
-
-    # RAG label badge
-    badge = mpatches.FancyBboxPatch((5.6, 6.55), 1.8, 0.38,
-                                     boxstyle="round,pad=0.06",
-                                     linewidth=1.5, edgecolor=ORANGE,
-                                     facecolor='#2E1608', zorder=3)
-    ax.add_patch(badge)
-    ax.text(6.5, 6.74, "RAG Based", color=ORANGE,
-            ha='center', va='center', fontsize=9, fontweight='bold', zorder=4)
 
     # Row labels
     ax.text(0.15, 5.6, "①", color=GREY, fontsize=9, va='center')

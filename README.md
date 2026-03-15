@@ -1,5 +1,7 @@
 # 🏠 Real Estate Research Tool
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://realestate-app-rag-ywqcafsyapttsspdq2nf9g.streamlit.app/)
+
 AI-powered real estate research tool. Paste up to 3 article URLs, ask questions, and get instant answers grounded in the source content. Built with LangChain, Groq LLM, ChromaDB, and Streamlit.
 
 ## How It Works
